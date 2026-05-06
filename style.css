@@ -189,6 +189,9 @@ footer{background:var(--surface);border-top:1px solid rgba(255,255,255,.05)}
 .footer-col a{color:var(--text-dim);transition:color .3s}
 .footer-col a:hover{color:var(--orange)}
 .closed{color:rgba(255,80,80,.55)}
+.footer-map{max-width:1280px;margin:0 auto;padding:0 32px 40px}
+.footer-map iframe{width:100%;border-radius:var(--radius);border:1px solid rgba(255,255,255,.06);filter:grayscale(.3) brightness(.85) contrast(1.1)}
+.footer-map iframe:hover{filter:grayscale(0) brightness(1) contrast(1)}
 .footer-bottom{max-width:1280px;margin:0 auto;padding:22px 32px;border-top:1px solid rgba(255,255,255,.05)}
 .footer-bottom p{font-size:.68rem;color:var(--text-dim);text-align:center;letter-spacing:.06em}
 
