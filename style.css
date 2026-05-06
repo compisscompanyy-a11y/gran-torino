@@ -138,7 +138,7 @@ a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;displ
 .tapas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .tapa-card{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid rgba(255,255,255,.04);border-radius:14px;padding:18px 20px;transition:all .4s;cursor:default}
 .tapa-card:hover{border-color:rgba(255,107,53,.15);transform:translateY(-3px)}
-.tapa-emoji{font-size:1.8rem;flex-shrink:0}
+.tapa-img{width:52px;height:52px;border-radius:10px;object-fit:cover;flex-shrink:0}
 .tapa-info{flex:1}
 .tapa-info h3{font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:500;color:var(--text)}
 .tapa-price{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--orange);flex-shrink:0;letter-spacing:.02em}
