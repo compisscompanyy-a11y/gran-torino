@@ -48,7 +48,6 @@ function animateHeroEntrance() {
 (function initBurgerParallax() {
   const wrapper = document.getElementById("hero-burger");
   if (!wrapper) return;
-  const inner = wrapper.querySelector(".hero-burger-inner");
 
   let mouseX = 0;
   let mouseY = 0;
@@ -61,17 +60,13 @@ function animateHeroEntrance() {
   });
 
   function animate() {
-    // Smooth lerp
-    currentX += (mouseX - currentX) * 0.04;
-    currentY += (mouseY - currentY) * 0.04;
+    currentX += (mouseX - currentX) * 0.03;
+    currentY += (mouseY - currentY) * 0.03;
 
-    // Apply subtle tilt on top of CSS animation
-    const tiltX = currentY * 8;  // Mouse Y -> rotateX
-    const tiltY = currentX * 12; // Mouse X -> extra rotateY offset
-    const moveX = currentX * 20;
+    const moveX = currentX * 18;
     const moveY = currentY * 10;
 
-    inner.style.transform = `rotateX(${tiltX}deg) translateX(${moveX}px) translateY(${moveY}px)`;
+    wrapper.style.transform = `translateY(-50%) translate(${moveX}px, ${moveY}px)`;
 
     requestAnimationFrame(animate);
   }

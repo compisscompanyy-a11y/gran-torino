@@ -74,14 +74,33 @@ a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;displ
 .hero-rating .stars{color:var(--amber);font-size:1rem;letter-spacing:2px}
 .hero-rating .rating-text{font-size:.75rem;font-weight:300;color:var(--text-dim);letter-spacing:.06em}
 
-/* Hero 3D Burger Image */
-.hero-burger-wrapper{position:absolute;top:50%;right:2%;transform:translateY(-50%);width:50%;max-width:600px;z-index:1;pointer-events:none;perspective:1200px}
-.hero-burger-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120%;height:120%;background:radial-gradient(circle,rgba(255,107,53,.15) 0%,rgba(245,166,35,.06) 40%,transparent 70%);border-radius:50%;filter:blur(40px);animation:glowPulse 4s ease-in-out infinite}
-@keyframes glowPulse{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
-.hero-burger-inner{transform-style:preserve-3d;animation:burgerFloat 4s ease-in-out infinite;will-change:transform}
-.hero-burger-img{width:100%;height:auto;filter:drop-shadow(0 20px 60px rgba(255,107,53,.25)) drop-shadow(0 4px 20px rgba(0,0,0,.6));animation:burgerSpin 10s linear infinite;backface-visibility:visible}
-@keyframes burgerSpin{0%{transform:rotateY(0deg)}100%{transform:rotateY(360deg)}}
-@keyframes burgerFloat{0%,100%{transform:translateY(0px)}50%{transform:translateY(-16px)}}
+/* Hero Neon Burger Icon */
+.hero-burger-wrapper{position:absolute;top:50%;right:4%;transform:translateY(-50%);width:44%;max-width:520px;z-index:1;pointer-events:none}
+.hero-burger-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:130%;height:130%;background:radial-gradient(circle,rgba(255,107,53,.1) 0%,rgba(57,255,20,.04) 40%,transparent 70%);border-radius:50%;filter:blur(60px);animation:glowPulse 5s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{opacity:.5;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
+.hero-burger-inner{animation:burgerFloat 5s ease-in-out infinite;will-change:transform}
+.hero-burger-svg{width:100%;height:auto;filter:drop-shadow(0 0 2px rgba(255,107,53,.4))}
+@keyframes burgerFloat{0%,100%{transform:translateY(0px)}50%{transform:translateY(-14px)}}
+
+/* Neon glow per layer */
+.neon-layer{filter:drop-shadow(0 0 3px currentColor);transition:filter .4s}
+.neon-bun-top,.neon-bun-bottom{filter:drop-shadow(0 0 6px rgba(255,107,53,.7)) drop-shadow(0 0 18px rgba(255,107,53,.3))}
+.neon-lettuce{filter:drop-shadow(0 0 6px rgba(57,255,20,.7)) drop-shadow(0 0 18px rgba(57,255,20,.3))}
+.neon-cheese{filter:drop-shadow(0 0 6px rgba(255,215,0,.7)) drop-shadow(0 0 18px rgba(255,215,0,.3))}
+.neon-patty{filter:drop-shadow(0 0 6px rgba(255,23,68,.7)) drop-shadow(0 0 18px rgba(255,23,68,.3))}
+
+/* Staggered draw-in animation */
+.neon-layer{stroke-dasharray:500;stroke-dashoffset:500;animation:drawLine 1.6s ease forwards}
+.neon-bun-top{animation-delay:.3s}
+.neon-lettuce{animation-delay:.6s}
+.neon-cheese{animation-delay:.9s}
+.neon-patty{animation-delay:1.2s}
+.neon-bun-bottom{animation-delay:1.5s}
+@keyframes drawLine{to{stroke-dashoffset:0}}
+
+/* Subtle neon pulse */
+.hero-burger-svg path,.hero-burger-svg line{animation:drawLine 1.6s ease forwards,neonPulse 3s ease-in-out infinite 2.5s}
+@keyframes neonPulse{0%,100%{opacity:1}50%{opacity:.7}}
 
 .hero-scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2}
 .hero-scroll-hint span{font-size:.58rem;letter-spacing:.45em;text-transform:uppercase;color:var(--text-dim)}
@@ -178,14 +197,14 @@ footer{background:var(--surface);border-top:1px solid rgba(255,255,255,.05)}
   .menu-grid{grid-template-columns:repeat(2,1fr)}
   .ingredients-row{grid-template-columns:repeat(2,1fr)}
   .stats-row{grid-template-columns:repeat(2,1fr);gap:32px}
-  .hero-burger-wrapper{width:42%;opacity:.7}
+  .hero-burger-wrapper{width:38%;opacity:.8}
   .footer-top{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .nav-links,.nav-cta{display:none}
   .nav-burger{display:flex}
   .hero-content{padding-top:100px}
-  .hero-burger-wrapper{width:80%;opacity:.2;right:-15%;top:55%}
+  .hero-burger-wrapper{width:70%;opacity:.15;right:-10%;top:55%}
   .menu-grid{grid-template-columns:1fr}
   .ingredients-row{grid-template-columns:1fr}
   .stats-row{grid-template-columns:repeat(2,1fr)}
