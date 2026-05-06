@@ -73,6 +73,34 @@ function animateHeroEntrance() {
   animate();
 })();
 
+// ============ MENU TABS ============
+(function initMenuTabs() {
+  const tabs = document.querySelectorAll(".menu-tab");
+  const panels = document.querySelectorAll(".menu-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // Deactivate all
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((p) => p.classList.remove("active"));
+
+      // Activate clicked
+      tab.classList.add("active");
+      const target = document.getElementById("panel-" + tab.dataset.tab);
+      if (target) {
+        target.classList.add("active");
+
+        // Re-trigger reveal animations for cards inside this panel
+        target.querySelectorAll(".menu-card, .tapa-card").forEach((card) => {
+          card.classList.remove("visible");
+          void card.offsetWidth; // force reflow
+          card.classList.add("visible");
+        });
+      }
+    });
+  });
+})();
+
 // ============ SCROLL REVEAL ============
 function initReveal() {
   const reveals = document.querySelectorAll(

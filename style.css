@@ -122,9 +122,30 @@ a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;displ
 .section-title em{font-style:normal;background:linear-gradient(135deg,var(--orange),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .section-desc{font-size:.9rem;font-weight:300;color:var(--text-dim);max-width:480px;margin:16px auto 0;line-height:1.7}
 
-/* ---------- MENU GRID ---------- */
+/* ---------- MENU TABS ---------- */
 #menu{padding:0 32px 100px;max-width:1280px;margin:0 auto}
+.menu-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:48px;flex-wrap:wrap}
+.menu-tab{font-family:'Poppins',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:12px 28px;border-radius:100px;border:1px solid rgba(255,255,255,.1);background:transparent;color:var(--text-dim);cursor:pointer;transition:all .35s;white-space:nowrap}
+.menu-tab:hover{border-color:rgba(255,107,53,.3);color:var(--text)}
+.menu-tab.active{background:var(--orange);border-color:var(--orange);color:#fff;box-shadow:0 4px 24px rgba(255,107,53,.3)}
+
+/* Panels */
+.menu-panel{display:none;animation:panelIn .45s ease}
+.menu-panel.active{display:block}
+@keyframes panelIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- TAPAS GRID ---------- */
+.tapas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tapa-card{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid rgba(255,255,255,.04);border-radius:14px;padding:18px 20px;transition:all .4s;cursor:default}
+.tapa-card:hover{border-color:rgba(255,107,53,.15);transform:translateY(-3px)}
+.tapa-emoji{font-size:1.8rem;flex-shrink:0}
+.tapa-info{flex:1}
+.tapa-info h3{font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:500;color:var(--text)}
+.tapa-price{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--orange);flex-shrink:0;letter-spacing:.02em}
+
+/* ---------- MENU GRID ---------- */
 .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.menu-grid--2col{grid-template-columns:repeat(2,1fr)}
 .menu-card{position:relative;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.04);transition:all .5s;cursor:default}
 .menu-card:hover{transform:translateY(-8px);border-color:rgba(255,107,53,.15)}
 .card-glow{position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,107,53,.06),transparent 60%);opacity:0;transition:opacity .5s;pointer-events:none}
@@ -138,7 +159,9 @@ a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;displ
 
 .card-body{padding:22px}
 .card-tag{font-size:.62rem;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;display:block}
-.card-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.06em;margin-bottom:8px;color:var(--text)}
+.card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.card-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.06em;color:var(--text)}
+.card-price{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--orange);letter-spacing:.02em;flex-shrink:0}
 .card-body p{font-size:.8rem;font-weight:300;color:var(--text-dim);line-height:1.6}
 
 /* ---------- INGREDIENTES ---------- */
@@ -198,6 +221,7 @@ footer{background:var(--surface);border-top:1px solid rgba(255,255,255,.05)}
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:1024px){
   .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .tapas-grid{grid-template-columns:repeat(2,1fr)}
   .ingredients-row{grid-template-columns:repeat(2,1fr)}
   .stats-row{grid-template-columns:repeat(2,1fr);gap:32px}
   .hero-burger-wrapper{width:38%;opacity:.8}
@@ -209,6 +233,10 @@ footer{background:var(--surface);border-top:1px solid rgba(255,255,255,.05)}
   .hero-content{padding-top:100px}
   .hero-burger-wrapper{width:70%;opacity:.15;right:-10%;top:55%}
   .menu-grid{grid-template-columns:1fr}
+  .menu-grid--2col{grid-template-columns:1fr}
+  .tapas-grid{grid-template-columns:1fr}
+  .menu-tabs{gap:6px}
+  .menu-tab{padding:10px 18px;font-size:.7rem}
   .ingredients-row{grid-template-columns:1fr}
   .stats-row{grid-template-columns:repeat(2,1fr)}
   .review-card{min-width:270px}

@@ -105,88 +105,293 @@
     </div>
   </section>
 
-  <!-- ============ MENU DESTACADO ============ -->
+  <!-- ============ CARTA COMPLETA ============ -->
   <section id="menu">
     <div class="section-header">
       <span class="section-tag">Nuestra Carta</span>
-      <h2 class="section-title">Burgers<br /><em>premium</em></h2>
-      <p class="section-desc">Carne fresca, pan artesanal y los mejores ingredientes. Cada hamburguesa es una experiencia.</p>
+      <h2 class="section-title">La carta<br /><em>completa</em></h2>
+      <p class="section-desc">Carne fresca, pan artesanal y los mejores ingredientes. Cada plato es una experiencia.</p>
     </div>
 
-    <div class="menu-grid">
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop&auto=format" alt="Colorado Burger" class="card-img" loading="lazy" />
-          <div class="card-badge">&#9733; FAVORITA</div>
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Signature</span>
-          <h3>Colorado</h3>
-          <p>La favorita de nuestros clientes. Carne jugosa a la parrilla con queso fundido, bacon crujiente y nuestra salsa secreta.</p>
-        </div>
-      </article>
+    <!-- Tabs -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-tab="tapas">&#127839; Entrantes</button>
+      <button class="menu-tab" data-tab="burgers">&#127828; Hamburguesas</button>
+      <button class="menu-tab" data-tab="hotdogs">&#127789; Hot Dogs</button>
+      <button class="menu-tab" data-tab="pizzas">&#127835; Pizzas</button>
+    </div>
 
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual card-visual--2">
-          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop&auto=format" alt="Route 66 Burger" class="card-img" loading="lazy" />
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Cl&aacute;sica</span>
-          <h3>Route 66</h3>
-          <p>Doble smash burger con cheddar americano, pepinillos, cebolla caramelizada y mostaza cl&aacute;sica.</p>
-        </div>
-      </article>
+    <!-- ====== TAPAS ====== -->
+    <div class="menu-panel active" id="panel-tapas">
+      <div class="tapas-grid">
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127839;</span>
+          <div class="tapa-info">
+            <h3>Patatas simples</h3>
+          </div>
+          <span class="tapa-price">3,00&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127840;</span>
+          <div class="tapa-info">
+            <h3>Boniato</h3>
+          </div>
+          <span class="tapa-price">4,50&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#129473;</span>
+          <div class="tapa-info">
+            <h3>Aros de cebolla</h3>
+          </div>
+          <span class="tapa-price">6,00&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127798;</span>
+          <div class="tapa-info">
+            <h3>Nachos</h3>
+          </div>
+          <span class="tapa-price">6,00&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127831;</span>
+          <div class="tapa-info">
+            <h3>Pollo crunchy</h3>
+          </div>
+          <span class="tapa-price">7,50&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127839;</span>
+          <div class="tapa-info">
+            <h3>Patatas Torino</h3>
+          </div>
+          <span class="tapa-price">7,50&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127836;</span>
+          <div class="tapa-info">
+            <h3>Salchipapas</h3>
+          </div>
+          <span class="tapa-price">6,00&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#129472;</span>
+          <div class="tapa-info">
+            <h3>Teque&ntilde;os de queso</h3>
+          </div>
+          <span class="tapa-price">5,00&euro;</span>
+        </article>
+        <article class="tapa-card">
+          <span class="tapa-emoji">&#127831;</span>
+          <div class="tapa-info">
+            <h3>Alitas de pollo</h3>
+          </div>
+          <span class="tapa-price">6,00&euro;</span>
+        </article>
+      </div>
+    </div>
 
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual card-visual--3">
-          <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop&auto=format" alt="Mustang Chicken" class="card-img" loading="lazy" />
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Chicken</span>
-          <h3>Mustang</h3>
-          <p>Pollo crujiente marinado 24h, coleslaw casero, jalape&ntilde;os y mayo chipotle.</p>
-        </div>
-      </article>
+    <!-- ====== HAMBURGUESAS ====== -->
+    <div class="menu-panel" id="panel-burgers">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop&auto=format" alt="Alaska Burger" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Alaska</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Carne 100% ternera, lechuga, tomate, bacon, queso, salsa pepinillo, ketchup, mahonesa.</p>
+          </div>
+        </article>
 
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual card-visual--4">
-          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop&auto=format" alt="Diablo Burger" class="card-img" loading="lazy" />
-          <div class="card-badge">&#128293; PICANTE</div>
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Spicy</span>
-          <h3>Diablo</h3>
-          <p>Para valientes. Doble carne con habanero, pimiento asado, pepper jack y salsa inferno.</p>
-        </div>
-      </article>
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop&auto=format" alt="Colorado Burger" class="card-img" loading="lazy" />
+            <div class="card-badge">&#9733; FAVORITA</div>
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Colorado</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Carne 100% ternera, doble queso, doble panceta, cebolla caramelizada, salsa burgue, salsa cheddar.</p>
+          </div>
+        </article>
 
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual card-visual--5">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop&auto=format" alt="Camaro Pizza" class="card-img" loading="lazy" />
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Pizza</span>
-          <h3>Camaro</h3>
-          <p>Nuestra pizza estrella. Masa artesanal con ingredientes premium y horneada al punto perfecto.</p>
-        </div>
-      </article>
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop&auto=format" alt="Texas Burger" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Texas</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Carne 100% ternera, doble panceta, queso de cabra y mermelada de tomate.</p>
+          </div>
+        </article>
 
-      <article class="menu-card">
-        <div class="card-glow"></div>
-        <div class="card-visual card-visual--6">
-          <img src="https://images.unsplash.com/photo-1619740455993-9d701c29e1c3?w=400&h=300&fit=crop&auto=format" alt="Gran Torino Dog" class="card-img" loading="lazy" />
-        </div>
-        <div class="card-body">
-          <span class="card-tag">Hot Dog</span>
-          <h3>Gran Torino Dog</h3>
-          <p>Hot dog XL con salchicha premium, queso cheddar fundido, cebolla crispy y nuestra salsa BBQ.</p>
-        </div>
-      </article>
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&h=300&fit=crop&auto=format" alt="Nebraska Burger" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Nebraska</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Carne 100% de ternera, bacon, papa paja, pepinillos, salsa de queso y salsa barbacoa.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop&auto=format" alt="Wisconsin Burger" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Wisconsin</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Pollo crujiente, lechuga, tomate, queso, mayonesa y salsa burgue.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop&auto=format" alt="Jack Daniels Burger" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Jack Daniels</h3><span class="card-price">10,00&euro;</span></div>
+            <p>Carne 100% ternera, aros de cebolla, queso cheddar y salsa Jack Daniels.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ====== HOT DOGS ====== -->
+    <div class="menu-panel" id="panel-hotdogs">
+      <div class="menu-grid menu-grid--2col">
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1619740455993-9d701c29e1c3?w=400&h=300&fit=crop&auto=format" alt="Mc Fly Hot Dog" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Mc Fly</h3><span class="card-price">7,50&euro;</span></div>
+            <p>Salchicha XXL, papa paja, mayonesa, ketchup, miel y mostaza, cheddar, zanahoria rallada, cebolla cruda y queso.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1496054711666-0e6fb490d66e?w=400&h=300&fit=crop&auto=format" alt="Toretto Hot Dog" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Toretto</h3><span class="card-price">7,50&euro;</span></div>
+            <p>Salchicha XXL, bacon, cebolla crujiente, salsa pepinillo, ketchup y queso.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ====== PIZZAS ====== -->
+    <div class="menu-panel" id="panel-pizzas">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop&auto=format" alt="Pizza Chimichurri" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Chimichurri</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, mozzarella natural, aceitunas, chimichurri.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&auto=format" alt="Pizza Pesto" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Pesto</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Salsa de pesto, mozzarella, tomates cherry y mortadela italiana.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop&auto=format" alt="Pizza Diavola" class="card-img" loading="lazy" />
+            <div class="card-badge">&#128293; PICANTE</div>
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Diavola</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, mozzarella, pepperoni y cebolla.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&h=300&fit=crop&auto=format" alt="Pizza Carbonara" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Carbonara</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Salsa carbonara, mozzarella, champi&ntilde;ones y bacon.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&h=300&fit=crop&auto=format" alt="Pizza Puttanesca" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Puttanesca</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, mozzarella, anchoas, alcaparras y aceitunas.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop&auto=format" alt="Pizza Barbacoa" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Barbacoa</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Salsa BBQ, mozzarella, pollo crujiente y bacon.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=400&h=300&fit=crop&auto=format" alt="Pizza Vegetariana" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Vegetariana</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, mozzarella, champi&ntilde;ones, pimiento, cebolla, aceitunas.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&auto=format" alt="Pizza Hawaiana" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Hawaiana</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, jam&oacute;n York, pi&ntilde;a y bacon.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-glow"></div>
+          <div class="card-visual">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop&auto=format" alt="Pizza Cuatro Quesos" class="card-img" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-head"><h3>Cuatro quesos</h3><span class="card-price">11,00&euro;</span></div>
+            <p>Tomate casero, mozzarella, queso gouda, queso cheddar y queso roquefort.</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
