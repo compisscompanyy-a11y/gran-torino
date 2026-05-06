@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
 
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -80,7 +78,13 @@
       </div>
     </div>
 
-    <div id="hero-3d"></div>
+    <!-- 3D Rotating Burger Image -->
+    <div class="hero-burger-wrapper" id="hero-burger">
+      <div class="hero-burger-glow"></div>
+      <div class="hero-burger-inner">
+        <img src="burger-hero.jpg" alt="Hamburguesa Gran Torino" class="hero-burger-img" />
+      </div>
+    </div>
 
     <div class="hero-scroll-hint">
       <span>Scroll</span>
@@ -100,7 +104,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual">
-          <span class="card-emoji">&#127828;</span>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop&auto=format" alt="Colorado Burger" class="card-img" loading="lazy" />
           <div class="card-badge">&#9733; FAVORITA</div>
         </div>
         <div class="card-body">
@@ -113,7 +117,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual card-visual--2">
-          <span class="card-emoji">&#127829;</span>
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop&auto=format" alt="Route 66 Burger" class="card-img" loading="lazy" />
         </div>
         <div class="card-body">
           <span class="card-tag">Cl&aacute;sica</span>
@@ -125,7 +129,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual card-visual--3">
-          <span class="card-emoji">&#127790;</span>
+          <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop&auto=format" alt="Mustang Chicken" class="card-img" loading="lazy" />
         </div>
         <div class="card-body">
           <span class="card-tag">Chicken</span>
@@ -137,7 +141,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual card-visual--4">
-          <span class="card-emoji">&#127829;</span>
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop&auto=format" alt="Diablo Burger" class="card-img" loading="lazy" />
           <div class="card-badge">&#128293; PICANTE</div>
         </div>
         <div class="card-body">
@@ -150,7 +154,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual card-visual--5">
-          <span class="card-emoji">&#127835;</span>
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop&auto=format" alt="Camaro Pizza" class="card-img" loading="lazy" />
         </div>
         <div class="card-body">
           <span class="card-tag">Pizza</span>
@@ -162,7 +166,7 @@
       <article class="menu-card">
         <div class="card-glow"></div>
         <div class="card-visual card-visual--6">
-          <span class="card-emoji">&#127839;</span>
+          <img src="https://images.unsplash.com/photo-1612392062126-3e6ff5a79cba?w=400&h=300&fit=crop&auto=format" alt="Gran Torino Dog" class="card-img" loading="lazy" />
         </div>
         <div class="card-body">
           <span class="card-tag">Hot Dog</span>
@@ -287,7 +291,7 @@
       <a href="tel:+34602044714" class="btn btn--primary btn--lg">&#128222; Llamar y pedir</a>
       <a href="https://maps.app.goo.gl/fLEzaJuZKRAi45A46" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">C&oacute;mo llegar</a>
     </div>
-    <p class="cta-hours">Mar-Dom 19:00 - 23:00 &middot; Takeaway &middot; Delivery</p>
+    <p class="cta-hours">Todos los d&iacute;as 19:00 - 23:00 (Lunes cerrado) &middot; Takeaway &middot; Delivery</p>
   </section>
 
   <!-- ============ FOOTER ============ -->
@@ -299,7 +303,7 @@
       </div>
       <div class="footer-col">
         <h4>Horario</h4>
-        <p>Martes a Domingo</p>
+        <p>Todos los d&iacute;as</p>
         <p>19:00 &ndash; 23:00</p>
         <p class="closed">Lunes: Cerrado</p>
       </div>
