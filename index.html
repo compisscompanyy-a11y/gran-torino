@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Torino | Burgers &amp; American Food &mdash; Xirivella, Valencia</title>
+  <meta name="description" content="Hamburguesas artesanales premium en Xirivella, Valencia. Comida americana aut&eacute;ntica con ingredientes de primera. 4.7&#9733; en Google." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">GRAN TORINO</span>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">GRAN <span>TORINO</span></a>
+      <ul class="nav-links">
+        <li><a href="#menu">Carta</a></li>
+        <li><a href="#ingredientes">Calidad</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="tel:+34602044714" class="nav-cta">Pedir ahora</a>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="#menu">Carta</a></li>
+      <li><a href="#ingredientes">Calidad</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="tel:+34602044714">Pedir ahora</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-bg-grain"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Xirivella, Valencia &middot; Est. 2020</p>
+      <h1 class="hero-title">
+        <span class="hero-line">El sabor</span>
+        <span class="hero-line hero-line--accent">del futuro</span>
+      </h1>
+      <p class="hero-sub">Hamburguesas artesanales con ingredientes de primera. Comida americana aut&eacute;ntica al estilo Route 66.</p>
+      <div class="hero-ctas">
+        <a href="tel:+34602044714" class="btn btn--primary">&#128242; Pedir ahora</a>
+        <a href="#menu" class="btn btn--ghost">Ver carta &darr;</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="rating-text">4.7/5 &mdash; 75+ rese&ntilde;as en Google</span>
+      </div>
+    </div>
+
+    <div id="hero-3d"></div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ MENU DESTACADO ============ -->
+  <section id="menu">
+    <div class="section-header">
+      <span class="section-tag">Nuestra Carta</span>
+      <h2 class="section-title">Burgers<br /><em>premium</em></h2>
+      <p class="section-desc">Carne fresca, pan artesanal y los mejores ingredientes. Cada hamburguesa es una experiencia.</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual">
+          <span class="card-emoji">&#127828;</span>
+          <div class="card-badge">&#9733; FAVORITA</div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Signature</span>
+          <h3>Colorado</h3>
+          <p>La favorita de nuestros clientes. Carne jugosa a la parrilla con queso fundido, bacon crujiente y nuestra salsa secreta.</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual--2">
+          <span class="card-emoji">&#127829;</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Cl&aacute;sica</span>
+          <h3>Route 66</h3>
+          <p>Doble smash burger con cheddar americano, pepinillos, cebolla caramelizada y mostaza cl&aacute;sica.</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual--3">
+          <span class="card-emoji">&#127790;</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Chicken</span>
+          <h3>Mustang</h3>
+          <p>Pollo crujiente marinado 24h, coleslaw casero, jalape&ntilde;os y mayo chipotle.</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual--4">
+          <span class="card-emoji">&#127829;</span>
+          <div class="card-badge">&#128293; PICANTE</div>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Spicy</span>
+          <h3>Diablo</h3>
+          <p>Para valientes. Doble carne con habanero, pimiento asado, pepper jack y salsa inferno.</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual--5">
+          <span class="card-emoji">&#127835;</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Pizza</span>
+          <h3>Camaro</h3>
+          <p>Nuestra pizza estrella. Masa artesanal con ingredientes premium y horneada al punto perfecto.</p>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual--6">
+          <span class="card-emoji">&#127839;</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Hot Dog</span>
+          <h3>Gran Torino Dog</h3>
+          <p>Hot dog XL con salchicha premium, queso cheddar fundido, cebolla crispy y nuestra salsa BBQ.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ INGREDIENTES ============ -->
+  <section id="ingredientes">
+    <div class="section-header">
+      <span class="section-tag">Sin atajos</span>
+      <h2 class="section-title">Ingredientes<br /><em>de verdad</em></h2>
+    </div>
+
+    <div class="ingredients-row">
+      <div class="ingredient-card">
+        <div class="ingr-number">01</div>
+        <h3>Carne 100% Fresca</h3>
+        <p>Ternera seleccionada, picada a diario. Nunca congelada, siempre jugosa y con el punto perfecto de grasa.</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingr-number">02</div>
+        <h3>Pan Brioche Artesanal</h3>
+        <p>Horneado a diario por nuestro panadero local. Tostado con mantequilla para ese crunch perfecto.</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingr-number">03</div>
+        <h3>Salsas Caseras</h3>
+        <p>Cada salsa est&aacute; hecha en casa con recetas propias. Sin conservantes, sin atajos. Sabor real.</p>
+      </div>
+      <div class="ingredient-card">
+        <div class="ingr-number">04</div>
+        <h3>Verduras Km 0</h3>
+        <p>Lechuga, tomate y cebolla de productores locales valencianos. Frescura que se nota en cada bocado.</p>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number" data-target="4.7">0</span>
+        <span class="stat-label">Valoraci&oacute;n Google</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="75">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Rese&ntilde;as</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="9.4">0</span>
+        <span class="stat-suffix">/10</span>
+        <span class="stat-label">Nota media</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-suffix">%</span>
+        <span class="stat-label">Carne fresca</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPINIONES ============ -->
+  <section id="opiniones">
+    <div class="section-header">
+      <span class="section-tag">4.7 &#9733; en Google</span>
+      <h2 class="section-title">Lo que dicen<br /><em>de nosotros</em></h2>
+    </div>
+
+    <div class="reviews-track">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Las mejores hamburguesas que he probado en Valencia. La Colorado es incre&iacute;ble, se nota la calidad de la carne. Repetiremos seguro.&rdquo;</p>
+        <div class="review-author">
+          <div class="author-avatar">M</div>
+          <div><strong>Mar&iacute;a L.</strong><span>Google</span></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;El pan brioche es otro nivel. Pedimos para llevar y lleg&oacute; r&aacute;pido y caliente. Las patatas tambi&eacute;n espectaculares. Top en Xirivella.&rdquo;</p>
+        <div class="review-author">
+          <div class="author-avatar">J</div>
+          <div><strong>Javier R.</strong><span>Google</span></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Ambiente estilo americano muy logrado. La pizza Camaro est&aacute; bru&shy;tal y los hot dogs son enormes. Precios muy buenos para la calidad.&rdquo;</p>
+        <div class="review-author">
+          <div class="author-avatar">A</div>
+          <div><strong>Ana G.</strong><span>Google</span></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <p>&ldquo;Fui por recomendaci&oacute;n y no me defraud&oacute;. La carne jugos&iacute;sima, el queso fundido perfecto. Solo pongo un pero: abrid a mediod&iacute;a!&rdquo;</p>
+        <div class="review-author">
+          <div class="author-avatar">P</div>
+          <div><strong>Pablo M.</strong><span>Google</span></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;De lo mejor de la zona. La salsa secreta de la Colorado es adictiva. Personal muy majo y atento. Nuevo sitio favorito.&rdquo;</p>
+        <div class="review-author">
+          <div class="author-avatar">L</div>
+          <div><strong>Laura S.</strong><span>Google</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION ============ -->
+  <section id="cta-section">
+    <div class="cta-glow"></div>
+    <h2>&#191;Hambre<br />de verdad?</h2>
+    <p>Pide a domicilio o ven a vernos en Xirivella</p>
+    <div class="cta-buttons">
+      <a href="tel:+34602044714" class="btn btn--primary btn--lg">&#128222; Llamar y pedir</a>
+      <a href="https://maps.app.goo.gl/fLEzaJuZKRAi45A46" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">C&oacute;mo llegar</a>
+    </div>
+    <p class="cta-hours">Mar-Dom 19:00 - 23:00 &middot; Takeaway &middot; Delivery</p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contacto">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">GRAN <span>TORINO</span></div>
+        <p>Burgers &amp; American Food<br />Xirivella, Valencia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Horario</h4>
+        <p>Martes a Domingo</p>
+        <p>19:00 &ndash; 23:00</p>
+        <p class="closed">Lunes: Cerrado</p>
+      </div>
+      <div class="footer-col">
+        <h4>D&oacute;nde estamos</h4>
+        <p>Pl. de Juan Alonso<br />46950 Xirivella<br />Valencia, Espa&ntilde;a</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p><a href="tel:+34602044714">+34 602 044 714</a></p>
+        <p><a href="https://instagram.com/gran_torino_valencia" target="_blank" rel="noopener">@gran_torino_valencia</a></p>
+        <p><a href="https://maps.app.goo.gl/fLEzaJuZKRAi45A46" target="_blank" rel="noopener">Google Maps</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Gran Torino. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
